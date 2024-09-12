@@ -10,10 +10,6 @@ function moveSlide(direction) {
     carousel.style.transform = `translateX(${-currentSlide * 100}%)`;
 }
 
-document.querySelector('.dropbtn').addEventListener('click', function() {
-    document.querySelector('.dropdown-content').classList.toggle('show');
-});
-
 // function for dropdown
 window.addEventListener('click', function(event) {
     if (!event.target.matches('.dropbtn')) {
